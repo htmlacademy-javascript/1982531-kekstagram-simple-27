@@ -30,8 +30,6 @@ const LIST_DESCRIPTION = [
   'Самая красивая звезда сияет ярче всех остальных'
 ];
 
-const getRandomArrayElements = (elements) => elements[getRandomInteger(0, elements.length - 1)];
-
 const createPost = (index) => ({
   id: index,
   url: `photos/${index}.jpg`,
@@ -40,5 +38,5 @@ const createPost = (index) => ({
   comments: getRandomInteger(0, 200)
 });
 const similarPost = () => Array.from({length: 25}, (_, idIndex) => createPost(idIndex + 1));
-console.log(similarPost());
+
 

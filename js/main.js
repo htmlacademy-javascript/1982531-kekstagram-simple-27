@@ -43,4 +43,4 @@ const createPost = (index) => ({
 });
 const similarPost = () => Array.from({length: 25}, (_, idIndex) => createPost(idIndex + 1));
 
-
+console.log(similarPost());
